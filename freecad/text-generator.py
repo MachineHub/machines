@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
 import sys
 FREECADPATH = '/usr/lib/freecad/lib/'
 sys.path.append(FREECADPATH)
