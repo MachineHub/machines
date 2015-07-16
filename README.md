@@ -33,10 +33,10 @@ http:/web/path/to/image/2.jpg
 ```bash
 int(a)
 int(a=10)
-int(a, (0:5:100))
-int(a=10, (0:5:100))
-int(a, [10, 20, 30])
-int(a=10, [10, 20, 30])
+int(a,(0:5:100))
+int(a=10,(0:5:100))
+int(a,[10,20,30])
+int(a=20,[10,20,30])
 ```
 
 #### Float
@@ -44,17 +44,10 @@ int(a=10, [10, 20, 30])
 ```bash
 float(a)
 float(a=3.14)
-float(a, (0:0.1:1))
-float(a=0.5, (0:0.1:1))
-float(a, [0.9, 1.0, 1.1])
-float(a=0.9, [0.9, 1.0, 1.1])
-```
-
-#### Boolean
-
-```bash
-bool(a)
-bool(a=True)
+float(a,(0:0.1:1))
+float(a=0.5,(0:0.1:1))
+float(a,[0.9,1.0,1.1])
+float(a=1.1,[0.9,1.0,1.1])
 ```
 
 #### String
@@ -62,8 +55,8 @@ bool(a=True)
 ```bash
 str(a)
 str(a='default')
-str(a, ['cats','dogs'])
-str(a='cats', ['cats','dogs'])
+str(a,['cats','dogs'])
+str(a='dogs',['cats','dogs'])
 ```
 
 ### Null example
@@ -80,7 +73,7 @@ Null Machine
 -description-
 Does nothing
 [inputs]
-int(number=10, [10, 20, 30])
+int(number,[10,20,30])
 str(text='default')
     '''
 
