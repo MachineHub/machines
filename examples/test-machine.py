@@ -1,5 +1,5 @@
 
-def machinebuilder():
+def machinebuilder(file_path):
     '''
 [doc]
 -title-
@@ -24,5 +24,3 @@ str(n='default')
 str(o,['cats','dogs'])
 str(p='dogs',['cats','dogs'])
     '''
-
-    return ''

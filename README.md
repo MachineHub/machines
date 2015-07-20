@@ -65,7 +65,7 @@ File null-example.py
 
 ```bash
 
-def machinebuilder(number, text):
+def machinebuilder(number, text, file_path):
     '''
 [doc]
 -title-
@@ -78,9 +78,6 @@ str(text='default')
     '''
 
     ###### Insert code here ######
-
-    # return result file name
-    return ''
 ```
 
 [machinehub-logo]: docs/img/machinehub.png

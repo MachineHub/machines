@@ -6,7 +6,7 @@ sys.path.append(FREECADPATH)
 from pyooml import *
 import random
 
-def machinebuilder():
+def machinebuilder(file_path):
     '''
 [doc]
 -title-
@@ -48,7 +48,4 @@ Create a random cheese
     id = id[:15]
     
     #-- Export the file
-    name = "cheese-id-{}.stl".format(id)
-    
-    obj.export_STL('./%s' % name)
-    return name
+    obj.export_STL(file_path)

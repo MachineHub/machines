@@ -7,7 +7,7 @@ import FreeCAD
 import Draft
 import Mesh
 
-def machinebuilder(text, size, height):
+def machinebuilder(text, size, height, file_path):
     '''
 [doc]
 -title-
@@ -33,7 +33,4 @@ int(height)
     doc.recompute()
 
     #-- Export the file
-    name = text+"-"+str(size)+".stl"
-    Mesh.export([obj], './%s' % name)
-
-    return name
+    Mesh.export([obj], file_path)

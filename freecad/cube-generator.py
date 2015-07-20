@@ -5,7 +5,7 @@ FREECADPATH = '/usr/lib/freecad/lib/'
 sys.path.append(FREECADPATH)
 from pyooml import *
 
-def machinebuilder(edge):
+def machinebuilder(edge, file_path):
     '''
 [doc]
 -title-
@@ -21,7 +21,4 @@ int(edge=50,(0:1:100))
     c = cube(edge,edge,edge)
     
     #-- Export the file
-    name = "cube{}-{}-{}.stl".format(edge,edge,edge)
-    c.export_STL('./%s' % name)
-    
-    return name
+    c.export_STL(file_path)
