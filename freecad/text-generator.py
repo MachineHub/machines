@@ -12,6 +12,8 @@ def machinebuilder(text, size, height, file_path):
 [doc]
 -title-
 Text Generator
+-images_url-
+http://images.freeimages.com/images/previews/17b/words-of-wisdom-1514865.jpg
 -description-
 Create text in 3D
 [inputs]
