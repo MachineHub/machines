@@ -13,6 +13,10 @@ def machinebuilder(file_path):
 Cheese Generator
 -description-
 Create a random cheese
+-images_url-
+http://images.freeimages.com/images/previews/9a6/cheese-1178234.jpg
+http://images.freeimages.com/images/previews/bb3/cheese-14-1472085.jpg
+http://images.freeimages.com/images/previews/28b/cheese-13-1472082.jpg
     '''
     #-- Number of drills to perform
     N = 20
