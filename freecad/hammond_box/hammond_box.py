@@ -92,6 +92,3 @@ str(model, ['1550B','1550A'])
 
     obj = doc.getObject(main_object)
     Mesh.export([obj], file_path)
-
-if __name__ == '__main__':
-    machinebuilder('1550A', '/home/def/Repositories/machines/freecad/testfile.stl')
