@@ -4,35 +4,48 @@ import sys
 FREECADPATH = '/usr/lib/freecad/lib/'
 sys.path.append(FREECADPATH)
 import FreeCAD
-import Draft
 import Mesh
+import os
+
 
 def machinebuilder(text, size, height, file_path):
     '''
 [doc]
 -title-
 Text Generator
--images_url-
-http://images.freeimages.com/images/previews/17b/words-of-wisdom-1514865.jpg
 -description-
 Create text in 3D
+-images_url-
+http://images.freeimages.com/images/previews/17b/words-of-wisdom-1514865.jpg
 [inputs]
 str(text)
-int(size)
-int(height)
+int(size=50)
+int(height=5)
     '''
 
-    #-- Generate text
-    doc = FreeCAD.newDocument("TextGenerator")
+    #-- Open project
+    doc = FreeCAD.openDocument(os.path.abspath("text-generator.fcstd"))
 
-    ss=Draft.makeShapeString(String=text,FontFile="/usr/share/fonts/truetype/droid/DroidSans.ttf",Size=size,Tracking=0)
-    #ss=Draft.extrude(ss,FreeCAD.Base.Vector(0,0,10))
-
-    obj = doc.addObject("Part::Extrusion","TextGenerator")
-    obj.Base = ss
-    obj.Dir = (0,0,height)
-
+    #-- Edit parameters
+    doc.ShapeString.FontFile = os.path.abspath("DroidSans.ttf")
+    doc.ShapeString.String = text
+    doc.ShapeString.Size = size
+    doc.Extrude.Dir = (0, 0, height)
     doc.recompute()
 
     #-- Export the file
-    Mesh.export([obj], file_path)
+    Mesh.export([doc.Extrude], file_path)
+
+    """
+    # Alternative FreeCAD pure code
+
+    doc = FreeCAD.newDocument("text-generator")
+
+    import Draft
+    ss = Draft.makeShapeString(
+        String=text, FontFile=os.path.abspath("DroidSans.ttf"), Size=size, Tracking=0)
+    obj = doc.addObject("Part::Extrusion", "text-generator")
+    obj.Base = ss
+    obj.Dir = (0, 0, height)
+    doc.recompute()
+    """
