@@ -23,8 +23,8 @@ int(size=50)
 int(height=5)
     '''
 
-    document = os.path.abspath("text-generator.fcstd")
-    font = os.path.abspath("DroidSans.ttf")
+    document = os.path.abspath("text-generator/text-generator.fcstd")
+    font = os.path.abspath("text-generator/DroidSans.ttf")
 
     #-- Open document
     doc = FreeCAD.openDocument(document)
@@ -40,7 +40,7 @@ int(height=5)
     Mesh.export([doc.Extrude], file_path)
 
     #-- Close document
-    FreeCAD.closeDocument(document)
+    # FreeCAD.closeDocument(document)
 
     """
     # Alternative FreeCAD pure code

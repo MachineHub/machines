@@ -1,0 +1,11 @@
+[doc]
+-title-
+Cube Generator
+-description-
+Create a parametric cube
+-images_url-
+http://images.freeimages.com/images/previews/92c/toy-1419795.jpg
+http://images.freeimages.com/images/previews/ea8/wooden-cubes-1189233.jpg
+http://images.freeimages.com/images/previews/b9c/cubes-1-1178873.jpg
+[inputs]
+int(edge=50,(0:1:100))
