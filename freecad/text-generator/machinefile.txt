@@ -1,0 +1,11 @@
+[doc]
+-title-
+Text Generator
+-description-
+Create text in 3D
+-images_url-
+http://images.freeimages.com/images/previews/17b/words-of-wisdom-1514865.jpg
+[inputs]
+str(text)
+int(size=50)
+int(height=5)
