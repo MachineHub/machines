@@ -1,0 +1,11 @@
+[doc]
+-title-
+Hello World Cube
+-description-
+A simple CUbe
+-images_url-
+http://d33y93cfm0wb4z.cloudfront.net/coloringimages/3D_shapes/444x271/cube_447x271.jpg
+[inputs]
+int(length=50)
+float(width=50)
+int(height=50)

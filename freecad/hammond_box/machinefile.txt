@@ -1,0 +1,9 @@
+[doc]
+-title-
+Hammond 1550 box generator
+-images_url-
+http://static3.tme.eu/products_pics/a/b/8/ab8d69582f285942fdd5ccd29a678476/25560.jpg
+-description-
+Create Hammond 1550 box
+[inputs]
+str(model, ['1550B','1550A'])

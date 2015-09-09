@@ -1,8 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import sys, os
+import sys
+import os
 FREECADPATH = '/usr/lib/freecad/lib/'
 sys.path.append(FREECADPATH)
+sys.path.append(os.path.realpath(os.path.dirname(__file__)))
 import FreeCAD
 import Mesh
 import tempfile

@@ -1,13 +1,26 @@
 [doc]
 -title-
-Base Laptop
+Laptop Base
 -description-
-Create a base to your laptop.
-Version 1.0
+Description
 -images_url-
-http://images.freeimages.com/images/previews/e49/isolated-macbook-pro-1615424.jpg
+http://www.online-image-editor.com//styles/2014/images/example_image.png
 [inputs]
 int(X=150,(100:5:250))
 float(Y=200)
 int(angle=30,[30,35,40,45])
 int(G=10)
+[outputs]
+stl
+[sysdeps]
+-system-
+freecad
+freecad-doc
+python
+-pip-
+flask==0.10.1
+[engines]
+-engine-
+freecad
+-python-
+2.7
