@@ -1,0 +1,13 @@
+[doc]
+-title-
+Hello world cylinder
+-description-
+A simple cylinder
+-images_url-
+https://github.com/Obijuan/machines/raw/develop/freecad/cylinder/images/cylinder-2.png
+https://github.com/Obijuan/machines/raw/develop/freecad/cylinder/images/cylinder-1.png
+[inputs]
+float(diameter=16)
+int(height=40)
+
+
